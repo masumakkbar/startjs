@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h4>Object is a key-value pairs.</h4>
+
+    <script>
+        var Boss = {
+            Name: "Md Hemal Akand",
+            Age: 23, 
+            Language: "Bangla", 
+            Country: "Bangladesh",
+            Address: {
+                Street: 07,
+                House: 29, 
+                Location: "Near To Popular Hospital, Uttara",
+                City: "Dhaka",
+            },
+           //alertSMS: alert("This is alert for everyone")
+        }
+        //Express with dot notation
+        console.log(Boss.Language);
+        console.log(Boss.Address.Location);
+
+        //Express with array like notation
+        console.log(Boss['Language']);
+        console.log(Boss['Address']['City']);
+
+        //Modify Object Property value
+        Boss.Name = "Md Hemal Only";
+        console.log(Boss.Name);
+
+        //Adding New Property
+        Boss.maritalStatus = "Unmarried";
+        console.log(Boss.maritalStatus);
+
+        //Deleting Existing Property
+        delete Boss.Age;
+        console.log(Boss.Age);  //Showing undefined for deleting
+
+        //Checking if property exist
+        console.log('Country' in Boss);
+        console.log('Street' in Boss.Address);
+
+
+    </script>
+
+</body>
+</html>
