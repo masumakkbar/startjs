@@ -17,10 +17,37 @@
 
  
         //Accessing Arry Elements
-        var arrayExample = [
-        ];
+        var familyName = ['Masum', 'Maruf', 'Mustasim', 'Mustayeen'];
 
-        console.log(arrayExample);
+        //Changing value of index
+        familyName[1] = 'Maruf Billah';
+        console.log(familyName[1]);
+
+        //Getting Array Size or number of elements.
+        console.log(familyName.length);
+
+        //Finding index of an array element
+        console.log(familyName.indexOf('Mustasim'));
+
+        //Adding new element at the end of array
+        familyName.push('Rikta');
+        console.log(familyName);
+
+        //Adding new element at the starting ot array
+        familyName.unshift('Mukta');
+        console.log(familyName);
+
+        //Check if a value is an array : return true or false 
+        console.log(Array.isArray(familyName)); 
+
+        //Removing element from end of array
+        familyName.pop();
+        console.log(familyName);
+
+        //Removing element from starting of array
+        familyName.shift();
+        console.log(familyName);
+        
 
     </script>
 
