@@ -47,6 +47,22 @@
         console.log('Country' in Boss);
         console.log('Street' in Boss.Address);
 
+        //Arithmatice operation with Object 
+        var objectVal = {
+            toString() {
+                return 100;
+            }
+        }
+        console.log(objectVal*2);
+
+        var objectVal2 = {
+            valueOf() {
+                return 50;
+            }
+        }
+        console.log(objectVal2+20);
+
+
 
     </script>
 
